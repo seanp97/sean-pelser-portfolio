@@ -291,4 +291,8 @@ nav ul a:not(:last-of-type) {
     .portfolio-items div {
         margin-bottom: 75px;
     }
+	
+    nav ul a {
+	font-size: 16px;  
+    }
 }
