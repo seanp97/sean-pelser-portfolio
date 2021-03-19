@@ -295,4 +295,8 @@ nav ul a:not(:last-of-type) {
     nav ul a {
 	font-size: 16px;  
     }
+	
+    .parallax h1 {
+	font-size: 5rem;
+    }
 }
