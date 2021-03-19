@@ -170,7 +170,7 @@ nav ul a:not(:last-of-type) {
 .portfolio-items {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(3, 31.33%);
     grid-gap: 0 50px;
 }
 
