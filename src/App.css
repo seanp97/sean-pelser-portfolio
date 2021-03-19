@@ -123,7 +123,7 @@ nav ul a:not(:last-of-type) {
 }
 
 .parallax {
-  background-image: url('./Assets/para-portait.jpg');
+  background-image: url('./Assets/para.jpg');
   height: 100vh; 
   background-attachment: fixed;
   background-position: center;
