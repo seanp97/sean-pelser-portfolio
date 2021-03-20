@@ -300,7 +300,13 @@ nav ul a:not(:last-of-type) {
 	font-size: 5rem;
     }
 	
-    .brief-text h3 {
+    .brief-text h3,
+    .single-item h3,
+    .about-page h4{
 	font-size: 20px;
+    }
+	
+    .about-page ul li {
+       font-size: 17px;
     }
 }
