@@ -10,8 +10,8 @@ function About() {
 
   return (
     <div className="container about-page">
-        <h4>I am a full stack web developer who has worked mainly with web technoglogies. Among my career I have created many applications in many areas, a few are Wordpress, .NET, Flask, NodeJS, AngularJS and React</h4>
-        <h4>Throughout my journey I have expiremented in different areas from web... </h4>
+        <h4>I am a full stack web developer who has worked mainly with web technologies. Among my career I have created many applications in many areas, a few are Wordpress, .NET, Flask, NodeJS, AngularJS and React</h4>
+        <h4>Throughout my journey I have expirimented in different areas from web... </h4>
         <ul className="area-list">
           <li>Desktop Applications</li>
           <li>Mobile Development</li>
@@ -31,6 +31,7 @@ function About() {
           <li>PHP</li>
           <li>C# / .NET</li>
           <li>NodeJS</li>
+          <li>Python</li>
         </ul>
     </div>
   );
