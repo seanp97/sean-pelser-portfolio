@@ -27,7 +27,10 @@ function Portfolio() {
 
   return (
     <div className="container portfolio-items">
-      {loading ? {
+      
+      {loading ? <h4>Loading...</h4> : ''}
+      
+        {
             work.map(item =>
                 <div>
                     <Link to={`/portfolio/${item._id}`}>
@@ -36,7 +39,7 @@ function Portfolio() {
                     </Link>
                 </div>
             )
-        } : <h4>Loading....</h4> }
+        }
         
 
     </div>
