@@ -145,7 +145,7 @@ nav ul a:not(:last-of-type) {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to left, #FFF 50%, #000 50%);
+        background: linear-gradient(270deg ,#fff 50%,#d88b8b 0);
 }
 
 .who span.who-white {
