@@ -28,7 +28,7 @@ function Portfolio() {
   return (
     <div className="container portfolio-items">
       
-      {loading ? <h4>Loading...</h4> : ''}
+      {loading ? '' : <h4>Loading...</h4>}
       
         {
             work.map(item =>
