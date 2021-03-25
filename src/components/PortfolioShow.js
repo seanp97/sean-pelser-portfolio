@@ -6,6 +6,8 @@ function PortfolioShow(match) {
     const urlID = match.match.params.id;
 
     const [item, setItem] = useState([]);
+    
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         fetchSingleWork();
@@ -23,11 +25,14 @@ function PortfolioShow(match) {
 
         const content = await singlePort.json();
         setItem(content);
-        console.log(content);
+        //console.log(content);
+        setLoading(true);
     }
 
     return (
     <div className="single-item container">
+        
+        {loading ? '' : <h4>Loading...</h4>}
         
         {
             item.map(port =>
