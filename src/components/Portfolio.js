@@ -10,6 +10,8 @@ function Portfolio() {
     }, [])
 
     const [work, setWork] = useState([]);
+    
+    const [loading, setLoading] = useState(false);
 
     const fetchWork = async () => {
         const work = await fetch('https://sean-site-api.herokuapp.com/portfolio', {
@@ -20,12 +22,12 @@ function Portfolio() {
         });
         const workResult = await work.json();
         setWork(workResult);
+        setLoading(true);
     }
 
   return (
     <div className="container portfolio-items">
-
-        {
+      {loading ? {
             work.map(item =>
                 <div>
                     <Link to={`/portfolio/${item._id}`}>
@@ -34,7 +36,8 @@ function Portfolio() {
                     </Link>
                 </div>
             )
-        }
+        } : <h4>Loading....</h4> }
+        
 
     </div>
   );
