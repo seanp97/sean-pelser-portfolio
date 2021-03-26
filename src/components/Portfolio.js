@@ -32,7 +32,7 @@ function Portfolio() {
       
         {
             work.map(item =>
-                <div>
+                <div className="portfolio-single-item">
                     <Link to={`/portfolio/${item._id}`}>
                         <img src={item.project_image} />
                         <h3 key={item._id}>{item.project_title}</h3> 
