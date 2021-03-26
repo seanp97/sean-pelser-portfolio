@@ -32,7 +32,7 @@ function PortfolioShow(match) {
     return (
     <div className="single-item container">
         
-        {loading ? '' : <h4>Loading...</h4>}
+        {loading ? '' : <div class="loader"></div>}
         
         {
             item.map(port =>
