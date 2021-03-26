@@ -284,11 +284,11 @@ nav ul a:not(:last-of-type) {
 }
 
 .loader {
-  border: 10px solid #ddd;
+  border: 5px solid #ddd;
   border-radius: 50%;
-  border-top: 10px solid #d88b8b;
-  width: 120px;
-  height: 120px;
+  border-top: 5px solid #d88b8b;
+  width: 60px;
+  height: 60px;
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
