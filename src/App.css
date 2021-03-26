@@ -197,6 +197,8 @@ nav ul a:not(:last-of-type) {
     border: 2px solid #d88b8b;
     padding: 30px;
     border-radius: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 .portfolio-items img {
