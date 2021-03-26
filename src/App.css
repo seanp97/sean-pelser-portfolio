@@ -36,7 +36,7 @@ body::-webkit-scrollbar-thumb
 }
 
 .container {
-    width: 95%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -238,17 +238,31 @@ nav ul a:not(:last-of-type) {
 }
 
 .single-item button {
-    background-color: #FFF;
+    background-color: #d88b8b;
     padding: 15px;
     margin-top: 50px;
     cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid #716969;
+    border-radius: 5px;
+}
+
+.single-item button:hover {
+    transition: 0.5s;
+    background-color: #FFF;
+}
+
+.single-item button:hover a {
+    color: #000;
+    transition: 0.5s;
 }
 
 .single-item button a {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
     font-size: 25px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .single-item button a:hover {
