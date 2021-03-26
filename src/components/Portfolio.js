@@ -30,6 +30,8 @@ function Portfolio() {
       
       {loading ? '' : <div class="loader"></div>}
       
+      <div class="loader"></div>
+      
         {
             work.map(item =>
                 <div className="portfolio-single-item">
