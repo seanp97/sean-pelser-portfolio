@@ -39,7 +39,7 @@ function PortfolioShow(match) {
                 <div>
                     <img src={port.project_image} />
                     <h3>{port.project_description}</h3>
-                    <button><a href={port.project_link} target="_blank">View work</a></button>
+                    <button><a href={port.project_link} target="_blank">VIEW WORK</a></button>
                 </div>
             )
         }
