@@ -174,7 +174,7 @@ nav ul a:not(:last-of-type) {
     grid-gap: 0 50px;
 }
 
-.portfolio-items div:not('.loader') {
+.portfolio-items .portfolio-single-item {
     transition: 0.3s;
     padding: 40px;
     background-color: #FFF;
