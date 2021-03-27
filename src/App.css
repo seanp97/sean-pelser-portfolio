@@ -351,3 +351,9 @@ nav ul a:not(:last-of-type) {
        font-size: 17px;
     }
 }
+
+@media (max-width: 992px) { 
+	.container {
+	    width: 95%;
+	}
+}
