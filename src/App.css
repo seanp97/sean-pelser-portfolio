@@ -356,4 +356,8 @@ nav ul a:not(:last-of-type) {
 	.container {
 	    width: 95%;
 	}
+	
+	.single-item h3 {
+	    font-size: 15px;
+	}
 }
