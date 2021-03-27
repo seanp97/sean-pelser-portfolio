@@ -354,7 +354,7 @@ nav ul a:not(:last-of-type) {
 
 @media (max-width: 992px) { 
 	.container {
-	    width: 97%;
+	    width: 90%;
 	}
 
 }
