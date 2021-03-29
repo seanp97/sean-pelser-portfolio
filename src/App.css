@@ -309,7 +309,7 @@ nav ul a:not(:last-of-type) {
   -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
   position: fixed;
-  left: 48.2%;
+  left: 47.2%;
   top: 50%;
 }
 
