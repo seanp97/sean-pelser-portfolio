@@ -46,7 +46,7 @@ function Nav() {
 
         <div id="social">
             <ul>
-                <a href="https://www.instagram.com/_pelsah/" target="_blank"><li><i className="fa fa-instagram"></i></li></a>
+                <a href="https://www.linkedin.com/in/sean-pelser-ba4bb8139" target="_blank"><li><i className="fa fa-linkedin"></i></li></a>
                 <a href="mailto:sean.pelser97@gmail.com"><li><i className="fa fa-envelope"></i></li></a>
                 <a href="https://github.com/seanp97" target="_blank"><li><i class="fa fa-github"></i></li></a>
             </ul>
