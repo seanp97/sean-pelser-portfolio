@@ -4,12 +4,12 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;
     user-select: none;
-    cursor:url('./Assets/cursor.ico'), auto;  
+    /*cursor:url('./Assets/cursor.ico'), auto;*/
 }
 
-html, a {
+/*html, a {
     cursor:url('./Assets/cursor.ico'), auto;  
-}
+}*/
 
 body {
     overflow-x: hidden;
