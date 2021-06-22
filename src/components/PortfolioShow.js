@@ -10,39 +10,45 @@ function PortfolioShow(match) {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        document.querySelector('nav').classList.add('dark-nav');
         fetchSingleWork();
     }, [])
 
     const fetchSingleWork = async () => {
-        const singlePort = await fetch('https://sean-site-api.herokuapp.com/single', {
-            method: 'POST',
+        const singlePort = await fetch(`https://dev-sean-site-api.pantheonsite.io/wp-json/wp/v2/portfolios/${urlID}`, {
             headers: {
               'Accept': 'application/json',
               'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({item: urlID })
+            }
         });
 
         const content = await singlePort.json();
         setItem(content);
-        //console.log(content);
         setLoading(true);
+    }
+
+    function removeTags(str) {
+        if ( (str===null) || (str===''))
+            return false;
+        else
+            str = str.toString();
+        return str.replace( /(<([^>]+)>)/ig, '');
     }
 
     return (
     <div className="single-item container">
         
-        {loading ? '' : <div class="loader"></div>}
+        {loading ?      
+
+        <div>
+            <img src={item.acf['portfolio_image']} />
+            <h3>{removeTags(item.content['rendered'])}</h3>
+            <button><a href={item.acf['portfolio_link']} target="_blank">VIEW WORK</a></button>
+        </div> 
         
-        {
-            item.map(port =>
-                <div>
-                    <img src={port.project_image} />
-                    <h3>{port.project_description}</h3>
-                    <button><a href={port.project_link} target="_blank">VIEW WORK</a></button>
-                </div>
-            )
-        }
+        : 
+        
+        <div class="loader"></div>}
 
     </div>
     )
