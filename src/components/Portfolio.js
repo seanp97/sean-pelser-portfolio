@@ -14,12 +14,13 @@ function Portfolio() {
     const [loading, setLoading] = useState(false);
 
     const fetchWork = async () => {
-        const work = await fetch('https://sean-site-api.herokuapp.com/portfolio', {
+        const work = await fetch('https://dev-sean-site-api.pantheonsite.io/wp-json/wp/v2/portfolios?_embed', {
             headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             }
         });
+        
         const workResult = await work.json();
         setWork(workResult);
         setLoading(true);
@@ -28,18 +29,20 @@ function Portfolio() {
   return (
     <div className="container portfolio-items">
       
-      {loading ? '' : <div class="loader"></div>}
-      
-        {
-            work.map(item =>
-                <div className="portfolio-single-item">
-                    <Link to={`/portfolio/${item._id}`}>
-                        <img src={item.project_image} />
-                        <h3 key={item._id}>{item.project_title}</h3> 
-                    </Link>
-                </div>
-            )
-        }
+      {loading ? 
+        work.map(item =>
+            <div className="portfolio-single-item">
+                <Link to={`/portfolio/${item.id}`}>
+                    <div key={item.id}>
+                        <img src={item._embedded["wp:featuredmedia"][0].source_url} />
+                        <h3>{item.title['rendered']}</h3>
+                    </div>
+                </Link>
+            </div>
+        ) 
+        :
+        <div class="loader"></div>}
+    
         
 
     </div>
