@@ -185,7 +185,7 @@ nav ul a:not(:last-of-type) {
     margin-bottom: 50px;
 }
   
-.portfolio-items div:hover {
+.portfolio-items > div:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -202,7 +202,7 @@ nav ul a:not(:last-of-type) {
 }
 
 .portfolio-items img {
-    width: 75%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
@@ -214,25 +214,28 @@ nav ul a:not(:last-of-type) {
 
 .single-item {
     background: #FFF;
-    padding: 70px;
+    padding: 15px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .single-item img {
-    width: 70%;
-    display: block;
+    width: 50%;
     margin: 0 auto;
+    display: block;
 }
 
 .single-item h1 {
     margin-bottom: 50px;
     width: fit-content;
-    border-bottom: 2px solid #000;
+    font-size: 65px;
+    margin: 0 auto;
+    display: block;
 }
 
 
 .single-item h3 {
-    margin-top: 75px;
+    margin-top: 50px;
     text-transform: uppercase;
     font-size: 22px;
     letter-spacing: 8px;
